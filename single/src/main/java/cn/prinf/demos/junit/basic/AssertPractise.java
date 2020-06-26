@@ -1,4 +1,4 @@
-package cn.prinf.demos.junit.single;
+package cn.prinf.demos.junit.basic;
 
 public class AssertPractise {
 

@@ -1,11 +1,11 @@
-package cn.prinf.demos.junit.single;
+package cn.prinf.demos.junit.basic;
 
 import org.junit.Test;
 
 import java.util.Arrays;
 
-import static cn.prinf.demos.junit.single.AssertPractise.contactString;
-import static cn.prinf.demos.junit.single.AssertPractise.helloAndNow;
+import static cn.prinf.demos.junit.basic.AssertPractise.contactString;
+import static cn.prinf.demos.junit.basic.AssertPractise.helloAndNow;
 import static org.hamcrest.CoreMatchers.allOf;
 import static org.hamcrest.CoreMatchers.anyOf;
 import static org.hamcrest.CoreMatchers.anything;
