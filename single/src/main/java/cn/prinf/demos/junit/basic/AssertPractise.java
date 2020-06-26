@@ -19,4 +19,8 @@ public class AssertPractise {
     public static String helloAndNow() {
         return "Hello, world!" + System.currentTimeMillis();
     }
+
+    public static float calculateAA(float totalPrice, float counts) {
+        return totalPrice / counts;
+    }
 }

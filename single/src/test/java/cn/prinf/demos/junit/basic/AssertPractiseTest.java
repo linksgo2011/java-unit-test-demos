@@ -1,9 +1,11 @@
 package cn.prinf.demos.junit.basic;
 
+import org.junit.Assert;
 import org.junit.Test;
 
 import java.util.Arrays;
 
+import static cn.prinf.demos.junit.basic.AssertPractise.calculateAA;
 import static cn.prinf.demos.junit.basic.AssertPractise.contactString;
 import static cn.prinf.demos.junit.basic.AssertPractise.helloAndNow;
 import static org.hamcrest.CoreMatchers.allOf;
@@ -21,6 +23,7 @@ import static org.hamcrest.CoreMatchers.sameInstance;
 import static org.hamcrest.CoreMatchers.startsWith;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.junit.Assert.assertArrayEquals;
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 
 public class AssertPractiseTest {
@@ -115,5 +118,10 @@ public class AssertPractiseTest {
     @Test
     public void should_get_error_for_null_input() {
         contactString(null, "");
+    }
+
+    @Test
+    public void should_assert_with_float_delta() {
+        assertEquals(3.3333F, calculateAA(10F, 3F), 0.1);
     }
 }
