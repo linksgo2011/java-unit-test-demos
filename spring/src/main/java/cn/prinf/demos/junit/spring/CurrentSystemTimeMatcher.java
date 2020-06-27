@@ -1,9 +1,8 @@
-package cn.prinf.demos.junit.basic;
+package cn.prinf.demos.junit.spring;
 
 import org.hamcrest.Description;
-import org.hamcrest.TypeSafeMatcher;
 
-public class CurrentSystemTimeMatcher extends TypeSafeMatcher<Long> {
+public class CurrentSystemTimeMatcher extends BaseMatcher<Long> {
     private final long timeWindow;
 
     public CurrentSystemTimeMatcher(long timeWindow) {
